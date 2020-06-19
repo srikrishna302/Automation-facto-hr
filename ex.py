@@ -37,7 +37,7 @@ def search(list,n):
                 u = mid - 1
     return False
 
-list = [160,196,211,226,233,274,298,316,317,358]
+list = [196,211,226,233,274,298,316,317,358] # holiday list according to company calender
 n = date3
 
 if search(list,n):
@@ -56,8 +56,8 @@ elif y== 0 or 1 or 2 or 3 or 4:
     username = browser.find_element_by_id("txtUsername")
     password = browser.find_element_by_id("txtPassword")
     submit   = browser.find_element_by_id("btnLogin")
-    username.send_keys("INHYD-1907")
-    password.send_keys("rgysa302")
+    username.send_keys("username") #enter username
+    password.send_keys("password") #enter password
 
     submit.click()
     time.sleep(5)
